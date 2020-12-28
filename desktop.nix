@@ -69,34 +69,34 @@
       # user server
       home-manager
     ];
-  };
 
-  # package settings
-  environment.variables.MOZ_USE_XINPUT2 = "1";
-  nixpkgs.config = {
-    allowUnfree = true;
-    firefox.enableAdobeFlash = false;
+    # package settings
+    environment.variables.MOZ_USE_XINPUT2 = "1";
+    nixpkgs.config = {
+      allowUnfree = true;
+      firefox.enableAdobeFlash = false;
 
-    packageOverrides = super:
-      let self = super.pkgs; in
-      {
-        rxvt-unicode = super.rxvt-unicode.override
-          {
-            configure = { availablePlugins, ... }: {
-              plugins = [ ];
+      packageOverrides = super:
+        let self = super.pkgs; in
+        {
+          rxvt-unicode = super.rxvt-unicode.override
+            {
+              configure = { availablePlugins, ... }: {
+                plugins = [ ];
+              };
             };
-          };
-        kodi = super.kodi.override
-          {
-            dbusSupport = false;
-            joystickSupport = false;
-            nfsSupport = false;
-            sambaSupport = false;
-            udevSupport = false;
-            usbSupport = false;
-            useWayland = false;
-            pvr-tvh = true;
-          };
-      };
+          kodi = super.kodi.override
+            {
+              dbusSupport = false;
+              joystickSupport = false;
+              nfsSupport = false;
+              sambaSupport = false;
+              udevSupport = false;
+              usbSupport = false;
+              useWayland = false;
+              pvr-tvh = true;
+            };
+        };
+    };
   };
 }

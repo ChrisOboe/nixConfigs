@@ -8,11 +8,13 @@
 
     # setup network
     networking = {
+      useDHCP = false;
       firewall.enable = false;
       enableIPv6 = true;
     };
 
     # setup nix
+    system.stateVersion = "20.03";
     nixpkgs.config.allowUnfree = true;
 
     # setup home manager
