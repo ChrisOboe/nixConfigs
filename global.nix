@@ -69,7 +69,7 @@
 
         kakoune
       ];
+      variables.EDITOR = "kak";
     };
-    variables.EDITOR = "kak";
   };
 }
