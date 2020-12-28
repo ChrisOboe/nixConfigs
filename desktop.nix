@@ -87,7 +87,7 @@
             };
           kodi = super.kodi.override
             {
-              dbusSupport = false;
+              #dbusSupport = false;
               joystickSupport = false;
               nfsSupport = false;
               sambaSupport = false;
