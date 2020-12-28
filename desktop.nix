@@ -32,7 +32,9 @@
     '';
 
     # users
+    users.groups."chris".gid = 1000;
     users.users."chris" = {
+      uid = 1000;
       isNormalUser = true;
       group = "chris";
       extraGroups = [ "wheel" "docker" ];
