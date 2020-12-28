@@ -85,17 +85,17 @@
                 plugins = [ ];
               };
             };
-          kodi = super.kodi.override
-            {
-              #dbusSupport = false;
-              joystickSupport = false;
-              nfsSupport = false;
-              sambaSupport = false;
-              udevSupport = false;
-              usbSupport = false;
-              useWayland = false;
-              pvr-tvh = true;
-            };
+          # kodi = super.kodi.override
+          #   {
+          #     #dbusSupport = false;
+          #     joystickSupport = false;
+          #     nfsSupport = false;
+          #     sambaSupport = false;
+          #     udevSupport = false;
+          #     usbSupport = false;
+          #     useWayland = false;
+          #     pvr-tvh = true;
+          #   };
         };
     };
   };
