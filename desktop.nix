@@ -52,6 +52,11 @@
       gparted
       firefox
       kodi
+      wireshark-qt
+      virt-manager
+      openscad
+      mupdf
+      feh
 
       # kakoune dev
       kak-lsp
@@ -67,6 +72,7 @@
 
       # remote
       freerdp
+      tigervnc
 
       # user server
       home-manager

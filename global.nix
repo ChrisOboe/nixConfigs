@@ -63,11 +63,18 @@
         htop
         wget
         screen
+        ncdu
+        lf
+
+        usbutils
+
+        traceroute
 
         atool
         unzip
 
         kakoune
+        nixpkgs-fmt
       ];
       variables.EDITOR = "kak";
     };
