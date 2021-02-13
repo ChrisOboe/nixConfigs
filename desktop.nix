@@ -82,7 +82,6 @@
     environment.variables.MOZ_USE_XINPUT2 = "1";
     nixpkgs.config = {
       allowUnfree = true;
-      firefox.enableAdobeFlash = false;
 
       packageOverrides = super:
         let self = super.pkgs; in
